@@ -3,23 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров - TechStore</title>
+    <title>Каталог товаров - TechFed</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="index.html">🛒 TechFed</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav__link active">Каталог</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__icons">
+                <button class="icon-btn" aria-label="Поиск">🔍</button>
+                <button class="icon-btn" aria-label="Корзина">🛒</button>
+            </div>
+        </div>
+    </header>
     <section class="page-header">
         <div class="container">
-            <h1>Каталог товаров</h1>
+            <h1 class="page-header__title">Каталог товаров</h1>
         </div>
     </section>
-
     <section class="products-section">
         <div class="container">
-            <div class="products-grid">
+            <div class="products-grid products-grid--catalog">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--sale">-20%</div>
+                    <div class="product-card__image">
+                        <img src="img/products/headphones.jpg" alt="img/products/naushniki.png">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Наушники Sony WH-1000XM5</h3>
+                        <p class="product-card__description">Премиальные наушники с активным шумоподавлением</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(125)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-old">28 000₽</span>
+                            <span class="price-current">24 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--new">НОВИНКА</div>
+                    <div class="product-card__image">
+                        <img src="img/products/iphone.png" alt="iPhone 17 Pro Max">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">iPhone 17 Pro Max 512GB</h3>
+                        <p class="product-card__description">Флагманский смартфон с титановым корпусом</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(342)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">109 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/products/MacBook.png" alt="MacBook Pro 14">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">MacBook Pro 14" M5 Pro</h3>
+                        <p class="product-card__description">Профессиональный ноутбук для работы и творчества</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(89)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">189 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--sale">-15%</div>
+                    <div class="product-card__image">
+                        <img src="img/products/Apple Watch.png" alt="Apple Watch Series 10">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Apple Watch Series 10</h3>
+                        <p class="product-card__description">Умные часы с датчиком здоровья и фитнес-трекером</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(267)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-old">44 000₽</span>
+                            <span class="price-current">38 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/products/planshet.png" alt="iPad Pro 12.9">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">iPad Pro 12.9" M2</h3>
+                        <p class="product-card__description">Мощный планшет для профессиональной работы и развлечений</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(184)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">99 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--new">НОВИНКА</div>
+                    <div class="product-card__image">
+                        <img src="img/products/Playstation.png" alt="PlayStation 5 Pro">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">PlayStation 5 Pro</h3>
+                        <p class="product-card__description">Игровая консоль нового поколения с SSD и 4K геймингом</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(562)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">54 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/products/Kolonka.png" alt="JBL Charge 5">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Колонка JBL Charge 5</h3>
+                        <p class="product-card__description">Портативная Bluetooth-колонка с мощным звуком</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(298)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">14 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--sale">-25%</div>
+                    <div class="product-card__image">
+                        <img src="img/products/GoPro.png" alt="GoPro Hero 12">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Экшн-камера GoPro Hero 12</h3>
+                        <p class="product-card__description">Компактная камера для съёмки экстремальных видео</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(147)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-old">39 990₽</span>
+                            <span class="price-current">29 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/products/Book.png" alt="Kindle Paperwhite">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Kindle Paperwhite</h3>
+                        <p class="product-card__description">Электронная книга с подсветкой и защитой от воды</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(412)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">12 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">О магазине</h3>
+                    <p class="footer__text">TechFed — ваш надёжный партнёр в мире электроники с 2026 года.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li>📧 informationFed@technich.ru</li>
+                        <li>📞 8 (800) 555-35-35</li>
+                        <li>📍 г. Волжский, ул. Волгодонская, д.2</li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">Одноклассники</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 TechFed. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
