@@ -10,22 +10,147 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-                <a href="index.html">🛒 TechStore</a>
+                <a href="index.html">🛒 TechFed</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link active">Главная</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__icons">
+                <button class="icon-btn" aria-label="Поиск">🔍</button>
+                <button class="icon-btn" aria-label="Корзина">🛒</button>
             </div>
         </div>
     </header>
+    <section class="hero">
+        <div class="container hero__content">
+            <h1 class="hero__title">TechStore</h1>
+            <p class="hero__subtitle">Лучшая электроника по доступным ценам</p>
+            <a href="catalog.html" class="btn btn--primary">Посмотреть каталог</a>
+        </div>
+    </section>
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--sale">-20%</div>
+                    <div class="product-card__image">
+                        <img src="img/products/naushniki.png" alt="Наушники Sony WH-1000XM5">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">Наушники Sony WH-1000XM5</h3>
+                        <p class="product-card__description">Премиальные наушники с активным шумоподавлением</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(125)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-old">28 000₽</span>
+                            <span class="price-current">24 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-card__badge product-card__badge--new">НОВИНКА</div>
+                    <div class="product-card__image">
+                        <img src="img/products/iphone.png" alt="iPhone 17 Pro Max">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">iPhone 17 Pro Max</h3>
+                        <p class="product-card__description">Флагманский смартфон с титановым корпусом</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(342)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">109 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>TechStore</h1>
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="img/products/MacBook.png" alt="MacBook Pro 14">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__title">MacBook Pro 14"</h3>
+                        <p class="product-card__description">Профессиональный ноутбук для работы и творчества</p>
+                        <div class="product-card__rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(89)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="price-current">189 990₽</span>
+                        </div>
+                        <button class="btn btn--success btn--full">В корзину</button>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
-
+            <div class="text-center">
+                <a href="catalog.html" class="btn btn--outline">Смотреть все товары</a>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">🚚</div>
+                    <h3 class="advantage-card__title">Бесплатная доставка</h3>
+                    <p class="advantage-card__text">Доставка по всей России при заказе от 3000₽</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">💳</div>
+                    <h3 class="advantage-card__title">Безопасная оплата</h3>
+                    <p class="advantage-card__text">Все платежи защищены современными протоколами</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">🎁</div>
+                    <h3 class="advantage-card__title">Гарантия качества</h3>
+                    <p class="advantage-card__text">Официальная гарантия на все товары от производителей</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon">📞</div>
+                    <h3 class="advantage-card__title">Поддержка 24/7</h3>
+                    <p class="advantage-card__text">Наши специалисты всегда готовы помочь</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 TechStore</p>
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">О магазине</h3>
+                    <p class="footer__text">TechStore — ваш надёжный партнёр в мире электроники с 2026 года.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li>📧 informationFed@technich.ru</li>
+                        <li>📞 8 (800) 555-35-35</li>
+                        <li>📍 г. Волжский, ул. Волгодонская, д.2</li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">Одноклассники</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 TechStore. Все права защищены.</p>
+            </div>
         </div>
     </footer>
 </body>
