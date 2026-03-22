@@ -36,5 +36,5 @@
 ![Каталог товаров2](img/screenshots/Товары2.png)
 
 ### О нас
-![О нас](img/screenshots/О нас.png)
-![О нас2](img/screenshots/О нас2.png)
+![О нас1](img/screenshots/О_нас.png)
+![О нас2](img/screenshots/О_нас2.png)
