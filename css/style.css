@@ -35,3 +35,45 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+.header {
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.log {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.link:hover,
+.link.active {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
