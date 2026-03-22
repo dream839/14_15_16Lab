@@ -3,27 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>О нас - TechStore</title>
+    <title>О нас - TechFed</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="index.html">🛒 TechFed</a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+                    <li><a href="about.html" class="nav__link active">О нас</a></li>
+                </ul>
+            </nav>
+            <div class="header__icons">
+                <button class="icon-btn" aria-label="Поиск">🔍</button>
+                <button class="icon-btn" aria-label="Корзина">🛒</button>
+            </div>
+        </div>
+    </header>
+
     <section class="page-header">
         <div class="container">
-            <h1>О нас</h1>
+            <h1 class="page-header__title">О нас</h1>
+            <p class="page-header__subtitle">Узнайте больше о нашей компании</p>
         </div>
     </section>
 
     <section class="about-section">
         <div class="container">
-            <h2>Наша история</h2>
+            <div class="about-content">
+                <h2 class="section-title">Наша история</h2>
+                <p class="about-text">
+                    <strong>TechStore</strong> — это современный интернет-магазин электроники, который работает на рынке с 2026 года. 
+                    Мы гордимся тем, что предлагаем нашим клиентам только оригинальную продукцию от ведущих мировых брендов.
+                </p>
+                <p class="about-text">
+                    За годы работы мы завоевали доверие более <strong>50 000 покупателей</strong> по всей России. 
+                    Наша миссия — сделать современные технологии доступными каждому и обеспечить высочайший уровень сервиса.
+                </p>
+                <p class="about-text">
+                    Мы постоянно расширяем ассортимент, следим за новинками рынка и предлагаем конкурентные цены. 
+                    Наша команда экспертов всегда готова помочь с выбором и ответить на любые вопросы.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card__number">5+</div>
+                        <div class="stat-card__label">лет на рынке</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">50K+</div>
+                        <div class="stat-card__label">довольных клиентов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">1000+</div>
+                        <div class="stat-card__label">товаров в каталоге</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">99%</div>
+                        <div class="stat-card__label">положительных отзывов</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="team-section">
         <div class="container">
-            <h2>Наша команда</h2>
+            <h2 class="section-title">Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card__photo">👨‍💼</div>
+                    <h3 class="team-card__name">Федоров Михаил</h3>
+                    <p class="team-card__position">Генеральный директор</p>
+                    <p class="team-card__description">10 лет опыта в сфере розничной торговли электроникой. Увлечён стратегическим развитием компании.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__photo">👩‍💼</div>
+                    <h3 class="team-card__name">Мария Петрова</h3>
+                    <p class="team-card__position">Коммерческий директор</p>
+                    <p class="team-card__description">Эксперт в области закупок и продаж. Отвечает за ассортиментную политику и развитие продаж.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-card__photo">👨‍💻</div>
+                    <h3 class="team-card__name">Дмитрий Иванов</h3>
+                    <p class="team-card__position">Технический директор</p>
+                    <p class="team-card__description">Отвечает за IT-инфраструктуру компании и развитие онлайн-платформы магазина.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="why-us-section">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--check">✓</div>
+                    <h3 class="advantage-card__title">Оригинальная продукция</h3>
+                    <p class="advantage-card__text">Все товары — только от официальных поставщиков с гарантией подлинности</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--money">💰</div>
+                    <h3 class="advantage-card__title">Выгодные цены</h3>
+                    <p class="advantage-card__text">Работаем напрямую с производителями, без посредников — это снижает цены</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--bolt">⚡</div>
+                    <h3 class="advantage-card__title">Быстрая доставка</h3>
+                    <p class="advantage-card__text">Отправка в день заказа по всей России. Курьерская доставка за 1-2 дня</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--shield">🛡</div>
+                    <h3 class="advantage-card__title">Гарантия качества</h3>
+                    <p class="advantage-card__text">Официальная гарантия от производителей до 2 лет на все товары</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--target">🎯</div>
+                    <h3 class="advantage-card__title">Проверенное качество</h3>
+                    <p class="advantage-card__text">Каждый товар проходит тщательную проверку перед отправкой покупателю</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-card__icon advantage-card__icon--trophy">🏆</div>
+                    <h3 class="advantage-card__title">Награды и признание</h3>
+                    <p class="advantage-card__text">Лауреат премии "Лучший интернет-магазин 2026" в категории "Электроника"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <h3 class="footer__title">О магазине</h3>
+                    <p class="footer__text">TechFed — ваш надёжный партнёр в мире электроники с 2026 года.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li>📧 informationFed@technich.ru</li>
+                        <li>📞 8 (800) 555-35-35</li>
+                        <li>📍 г. Волжский, ул. Волгодонская, д.2</li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">Одноклассники</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 TechFed. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
